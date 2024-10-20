@@ -1,0 +1,1 @@
+essa classe cad.php tem como objetivo ir no banco de dados e inserir informações dentro da tabela que criamos

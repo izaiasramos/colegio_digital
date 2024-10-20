@@ -1,0 +1,369 @@
+/* Para a parte de transição da tela das partes do site,deve fazer:
+html {
+  scroll-snap-type: y mandatory;
+} DEPOIS
+body{
+  scroll-snap-type: y mandatory;
+} E POR FIM COLOCAR:
+scroll-snap-align: start; em todas as divs principais de cada parte da tela que deseja que que faça essa transição rapida e focada. */
+html {
+    scroll-snap-type: y mandatory;
+  }
+  body{
+    background-color:rgb(67, 55, 55);
+    scroll-snap-type: y mandatory;
+    margin:0px;
+    padding:0px;
+  }
+
+  #container{
+    width:98%;
+    margin-left: 0.8%;
+  }
+  
+  #cabecalho{
+    scroll-snap-align: start;
+    /* display:grid; */
+    /* justify-content:space-around; */
+    /* width: 95%; */
+    /* margin-left:2.5%; */
+    /* height:120px; */
+    /* background-color:white; */
+    /* background-image:linear-gradient(to top, white,black 40%); */
+  }
+
+  #sair_deslogar{
+    float:left;
+  }
+  
+  /*  -text-align:center - esta centralizando os textos msm estando dentro da msm tag p */
+
+  
+  .banner {
+    /* width: 95%; */
+    height: 250px;
+    /* margin-left:2.5%; */
+  /*   background-image:url(header/banner.jpg); */
+    
+  }
+  .banner img {
+    width:100%;
+    height:250px;
+  }
+  
+  
+  /* 
+   - list-style: none;  - chamamos a ul e a li e tiramos os pontos que ficam por padrão em listas antes da palavra °lista tiramos com o list-style: none;
+  */
+  nav ul, 
+  nav li {
+    list-style: none;
+  }
+  
+  
+  nav ul {
+    display:flex;
+   }
+  
+  
+  
+  /*
+   - display:block - para conseguir configurar o tamanho do espaço
+   - text-decoration:none; - para tirar o sublinhado que fica abaixo das palavras da lista do menu
+   - text-transform:uppercase; - vai garantir que as palavras ficarão em maiusculas mesmo que sejam alteradas pelo html para minuscula.
+   - padding: 15px; - esta definindo o espaçamento interno dos botões,deixando o quadrado azul em volta da palavra maior. 
+  */
+  nav a {
+  /*   display:block; */
+   padding: 8px;
+    text-decoration:none;
+    text-transform:uppercase;
+    color: #ccc;  
+    flex-direction:row;
+    margin-left:35px;
+    background-color: #777;
+    border-radius: 3px;
+  /*   box-shadow: 2px 3px 8px #777; */
+    text-shadow: 5px 6px 6px #222;
+   }
+  nav a:hover{
+     background-color:#121740;
+     box-shadow: 5px 3px 9px #30a5ff;
+  /*   box-shadow: #12177d 7px 9px 5px; */
+  
+  }
+  
+  
+  
+  #c1{
+    width:25.40%;
+    height:180px;
+    border-right: 1px solid black;
+    background-color:white;
+    padding:1%;
+  
+    float:left;
+    text-align:center;
+  }
+  #c1:hover{
+    background-color:#121740;
+    color:white;
+    border-radius:0px;
+    /* padding:1px; */
+    /* width:24.20%; */
+    /* font-size:16px; */
+  }
+  
+  #c2{
+    width:25.20%;
+    height:180px;
+    border-right:1px solid black;
+    background-color:white;
+    padding:1%;
+    float:left;
+    text-align:center;
+  }
+  #c2:hover{
+    background-color:#121740;
+    color:white;
+    border-radius:0px;
+    /* padding:1px; */
+    /* width:24.20%; */
+    /* font-size:16px; */
+  }
+  
+  #c3{
+    width:24.62%;
+    height:180px;
+    border-right:1px solid black;
+    background-color:white;
+    padding:1%;
+    float:left;
+    text-align:center;
+  }
+  #c3:hover{
+    background-color:#121740;
+    color:white;
+    /* border-radius:0px; */
+    /* padding:1px; */
+    /* width:24%; */
+    /* font-size:16px; */
+  }
+  
+  #c4{
+    width:24.75%;
+    height:180px;
+    background-color:white;
+    padding:1%;
+    float:left;
+    text-align:center;
+  }
+  #c4:hover{
+    background-color:#121740;
+    color:white;
+    /* border-radius:0px; */
+    /* padding:1px; */
+    /* width:24%; */
+    font-size:16px;
+    
+  }
+  
+  #projetos{
+    display:flex;
+    justify-content:center;
+    flex-direction: row;
+    flex-wrap:wrap;
+    align-items:center;
+    clear:both;
+    float:left;
+    margin-top:10px;
+  
+  }
+  #projetos:hover{
+    
+  }
+  #p0{
+    scroll-snap-align: start;
+    display:flex;
+    justify-content:center;
+    flex-direction: row;
+    align-items:center;
+    width:95%;
+    height:640px;
+    background-image:linear-gradient(#222,darkgray 50%);
+    clear:both;
+    margin:15px;
+  }
+  
+  #p0 video{
+   width:98%;
+    height:620px;
+  }
+  #p0:hover{  
+  }
+  #p0 video:hover{
+    width:99.9%;
+    height:630px;
+  }
+  #p1{
+    scroll-snap-align: start;
+  /*   height: 70vh; */
+    display:flex;
+    justify-content:center;
+    flex-direction: row;
+    align-items:center;
+    width:95%;
+    height:670px;
+    background-image:linear-gradient(#222,darkgray 50%);
+    float:left;
+    clear:both;
+    margin:15px;
+  }
+  #p1 img{
+   width:98%;
+    height:600px;
+  }
+  #p1:hover{ 
+   
+  }
+  #p1 img:hover{
+    width:100%;
+    height:650px;
+  }
+  #p2{
+    scroll-snap-align: start;
+    display:flex;
+    justify-content:center;
+    flex-direction: row; 
+    align-items:center; 
+    width:95%;
+    height:670px;
+    background-image:linear-gradient(#222,darkgray 50%);
+    float:left;
+    margin:15px;
+  }
+  #p2 img{
+   width:98%;
+    height:600px;
+  }
+  #p2:hover{
+  
+  
+  }
+  #p2 img:hover{
+   width:100%;
+    height:650px;
+  }
+  
+  #p3{
+    scroll-snap-align: start;
+    display:flex;
+    justify-content:center;
+    flex-direction: row;
+    align-items:center;
+    width:95%;
+    height:670px;
+    background-image:linear-gradient(#222,darkgray 50%);
+    float:left;
+    margin:15px;
+  }
+  #p3 img {
+  
+    width:98%;
+    height:600px;
+  }
+  #p3:hover{
+  
+  }
+  #p3 img:hover {
+    width:100%;
+    height:650px;
+  }
+  
+  #p4{
+    scroll-snap-align: start;
+    display:flex;
+    justify-content:center;
+    flex-direction: row;
+    align-items:center;
+    
+    width:95%;
+    height:670px;
+    background-image:linear-gradient(#222, darkgray 50%) ;
+    float:left;
+  }
+  #p4 img {
+    width:98%;
+    height:600px;
+  }
+  #p4:hover{
+  
+  }
+  #p4 img:hover{
+     width:100%;
+    height:650px;
+  }
+  
+  .sobremim{
+   font-family: "Calibri";
+   clear:both;
+  }
+  
+  #sobre1{
+    width:23.74%;
+    height:325px;
+    border-right: 1px solid black;
+    background-color:white;
+    margin-left:2.5%;
+    float:left;
+    text-align:center;
+    padding: 5px;
+    
+  }
+  #sobre1:hover{
+    background-color:#121740;
+    color:white;
+  }
+  
+  #sobre2{
+    width:23.74%;
+    height:325px;
+    border-right:1px solid black;
+    background-color:white;
+    float:left;
+    text-align:center;
+    padding: 5px;
+   
+  }
+  #sobre2:hover{
+    background-color:#121740;
+    color:white;
+  
+  }
+  
+  #sobre3{
+    width:23.75%;
+    height:325px;
+    border-right:1px solid black;
+    background-color:white;
+    float:left;
+    text-align:center;
+    padding: 5px;
+  }
+  #sobre3:hover{
+    background-color:#121740;
+    color:white;
+  }
+  
+  #sobre4{
+    width:23.75%;
+    height:325px;
+    background-color:white;
+    float:left;
+    text-align:center;
+    padding: 5px;
+  }
+  #sobre4:hover{
+    background-color:#121740;
+    color:white;
+  }

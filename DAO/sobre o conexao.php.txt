@@ -1,0 +1,8 @@
+conexao.php
+
+esse codigo vai:
+abrir o localhost
+abrir o phpmyadmin
+vai digitar o usuario e a senha
+e vai apertar o botão entrar
+vai procurar o banco de dados que foi expecificado em nome no codigo e fazer a conexão com esse banco de dados
